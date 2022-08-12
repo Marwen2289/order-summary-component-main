@@ -1,0 +1,100 @@
+:root {
+    --PrimaryColor: hsl(225, 100%, 94%);
+    --PrimaryColor_one: hsl(245, 75%, 52%);
+    --SecondaryColor:  hsl(225, 100%, 98%);
+    --SecondaryColor_one: hsl(224, 23%, 55%);
+    --SecondaryColor_two: hsl(223, 47%, 23%);
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.main {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.container {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--SecondaryColor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    box-shadow: -10px 10px 10px black;
+    border-radius: 10px;
+   
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+h1, p, span {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+    text-align: center;
+    color: grey;
+}
+
+.container span:nth-of-type(1) {
+    margin-left: 40px;
+    font-weight: 700;
+}
+.container span:nth-of-type(2) {
+    margin-left: 40px;
+    color: grey;
+    
+}
+.container span:nth-of-type(3) {
+    float: right;
+}
+
+.icon-music {
+    width: 30px;
+  
+}
+
+.proceed {
+    background-color: var(--PrimaryColor_one);
+    width: fit-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    color: var(--PrimaryColor);
+    position: absolute;
+    top: 400px;
+    margin-left: 35px;
+}
+
+.cancel {
+    position: absolute;
+    top: 450px;
+    margin-left: 100px;
+    color: grey;
+}
